@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="icon" href="/favicon.png"> -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles-main.css') }}">
+  <!-- <link rel="stylesheet" href="css/styles-main.css"> -->
+  <title>ATENA</title>
+</head>
+<body>
+  <header>
+    <h1>Atena - COELBA | Seleção Estratégica de Cortes</h1>
+  </header>
+  <div class="content">
+    <div class="sidebar">
+      <form action="">
+        <div class="field">
+          <label for="turma">Turma</label>
+          <input type="text" value="" placeholder="Turma...">
+        </div>
+        <div class="field">
+          <label for="carteira">Carteira</label>
+          <select name="turma" id="">Turma
+            <option value="stc">STC</option>
+            <option value="eps">EPS</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="consulta">Consulta</label>
+          <input type="text" value="" placeholder="Consulta...">
+        </div>
+        <div class="field">
+          <label for="qtd-suscetiveis">Qtd. Suscetíveis</label>
+          <input type="text" value="" placeholder="--">
+        </div>
+        <div class="field">
+          <label for="sts-consulta">Status da Consulta</label>
+          <input type="text" value="" placeholder="--">
+        </div>
+        <div class="field">
+          <label for="qtd-suscetiveis">Qtd. Suscetíveis</label>
+          <input type="date" value="" placeholder="">
+        </div>
+      </form>
+    </div>
+    <div class="wrapper">
+      <p>Página inicial do site com Flask.</p>
+    </div>
+  </div>
+  <footer>
+    <h4>Rodapé</h4>
+  </footer>
+</body>
+</html>
