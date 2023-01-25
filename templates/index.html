@@ -12,6 +12,7 @@
 </head>
 <body>
   <header>
+    <h3>Atena - COELBA</h3>
     <h1>Atena - COELBA</h1>
   </header>
 
@@ -21,12 +22,12 @@
       <form action="">
 
         <div class="field">
-          <label for="turma">Turma</label>
-          <input type="text" value="" placeholder="Turma...">
+          <label for="turma">Turma:</label>
+          <input type="text" value="" placeholder="TURMA">
         </div>
         
         <div class="field">
-          <label for="carteira">Carteira</label>
+          <label for="carteira">Carteira:</label>
           <select name="turma" id="">Turma
             <option value="stc">STC</option>
             <option value="eps">EPS</option>
@@ -35,7 +36,7 @@
         
         <div class="field">
           <label for="consulta">Consulta</label>
-          <select name="consulta" id="">Consulta
+          <select name="consulta" id="">Consulta:
             <option value="convencional">CONVENCIONAL</option>
             <option value="disjuntor">DISJUNTOR</option>
             <option value="recorte">RECORTE</option>
@@ -44,29 +45,43 @@
         </div>
         
         <div class="field">
-          <label for="qtd-suscetiveis">Qtd. Suscetíveis</label>
+          <label for="qtd-suscetiveis">Qtd. Suscetíveis:</label>
           <input type="text" value="" placeholder="--">
         </div>
         
         <div class="field">
-          <label for="sts-consulta">Status da Consulta</label>
+          <label for="sts-consulta">Status da Consulta:</label>
           <input type="text" value="" placeholder="--">
         </div>
         
         <div class="field">
-          <label for="qtd-suscetiveis">Qtd. Suscetíveis</label>
+          <label for="qtd-suscetiveis">Qtd. Suscetíveis:</label>
           <input type="date" value="" placeholder="">
         </div>
-      
-      
+
       </form>
+
     </div>
 
     <div class="wrapper">
-      <p>Página inicial do site com Flask.</p>
+      <div class="p-Widget p-TabBar p-TabPanel-tabBar widget-tab-bar" data-orientation="horizontal">
+        <nav>
+          <!-- <ul class="menu"> -->
+            <div>Parâmetros</div>  
+            <div>Listagem de Raios</div>
+            <div>Selecionar</div>
+            <div>Resultados</div>
+            <div>Maiores Devedores</div>
+            <div>Seleção Massiva</div>
+            <div>HANA</div>  
+          <!-- </ul> -->
+        </nav>
+      </div>
       <img src="{{ url_for('static', filename='img/iberd.jpg') }}" alt="">
     </div>
+
   </div>
+
   <footer class="footer">
     <h4>Seleção Estratégica de Cortes</h4>
   </footer>

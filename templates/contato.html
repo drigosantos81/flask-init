@@ -8,5 +8,515 @@
 </head>
 <body>
   <p>Fale conosco.</p>
+
+  <div class="output_subarea jupyter-widgets-view" dir="auto">
+    <div class="p-Widget p-TabPanel jupyter-widgets widget-container widget-tab">
+      <div class="p-Widget p-TabBar p-TabPanel-tabBar widget-tab-bar" data-orientation="horizontal">
+        <ul class="p-TabBar-content">
+
+          <li title="" class="p-TabBar-tab p-mod-current" style="z-index: 7;">
+            <div class="p-TabBar-tabIcon"></div>
+            <div class="p-TabBar-tabLabel">Parâmetros</div>
+            <div class="p-TabBar-tabCloseIcon"></div>
+          </li>
+
+          <li title="" class="p-TabBar-tab" style="z-index: 5;">
+            <div class="p-TabBar-tabIcon"></div>
+            <div class="p-TabBar-tabLabel">Testagem de Raios</div>
+            <div class="p-TabBar-tabCloseIcon"></div>
+          </li>
+          
+          <li title="" class="p-TabBar-tab" style="z-index: 4;">
+            <div class="p-TabBar-tabIcon"></div>
+            <div class="p-TabBar-tabLabel">Selecionar</div>
+            <div class="p-TabBar-tabCloseIcon"></div>
+          </li>
+
+          <li title="" class="p-TabBar-tab" style="z-index: 3;">
+            <div class="p-TabBar-tabIcon"></div>
+            <div class="p-TabBar-tabLabel">Resultados</div>
+            <div class="p-TabBar-tabCloseIcon"></div>
+          </li>
+
+          <li title="" class="p-TabBar-tab" style="z-index: 2;">
+            <div class="p-TabBar-tabIcon"></div>
+            <div class="p-TabBar-tabLabel">Maiores Devedores</div>
+            <div class="p-TabBar-tabCloseIcon"></div>
+          </li>
+
+          <li title="" class="p-TabBar-tab" style="z-index: 1;">
+            <div class="p-TabBar-tabIcon"></div>
+            <div class="p-TabBar-tabLabel">Seleção Massiva</div>
+            <div class="p-TabBar-tabCloseIcon"></div>
+          </li>
+          
+          <li title="" class="p-TabBar-tab" style="z-index: 0;">
+            <div class="p-TabBar-tabIcon"></div>
+            <div class="p-TabBar-tabLabel">HANA</div>
+            <div class="p-TabBar-tabCloseIcon"></div>
+          </li>
+
+        </ul>
+      </div>
+    <div class="p-Widget p-Panel p-TabPanel-tabContents widget-tab-contents">
+      <div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-vbox">
+        <div class="p-Widget jupyter-widgets widget-inline-hbox widget-html">
+          <label class="widget-label" title="" style="display: none;"></label>
+          <div class="widget-html-content">
+
+            <style>
+              table {
+                margin-left: auto;
+                margin-right: auto;
+                border: none;
+                border-collapse: collapse;
+                border-spacing: 0;
+                color: black;
+                font-size: 12px;
+                table-layout: fixed;
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+              }
+
+              td, th {
+                border: 1px solid #dddddd;
+                text-align: center !important;
+                /* align: center !important; */
+                padding: 8px;
+              }
+
+              tr:nth-child(even) {
+                background-color: #dddddd;
+              }
+
+              .dataframe thead {
+                border-bottom: 1px solid black;
+                vertical-align: bottom;
+              }
+
+              .dataframe tbody tr:nth-child(odd) {
+                background: #f5f5f5;
+              }
+
+              .dataframe tr, .dataframe th, .dataframe td {
+                text-align: right;
+                vertical-align: middle;
+                padding: 0.5em 0.5em;
+                line-height: normal;
+                white-space: normal;
+                max-width: none;
+                border: none;
+              }
+
+              .status-label{
+                width: 100%;
+                text-align: center;
+                padding: 2px;
+                border-radius: 5px;
+                margin-bottom: 5px;
+              }
+              .success-label{
+                background-color: #4caf50;
+                color: #ffffff;
+              }
+              .error-label{
+                background-color: #f44336;
+                color: #ffffff;
+              }
+              .info-label{
+                background-color: #00bcd4;
+                color: #ffffff;
+              }
+              .warning-label{
+                background-color: #ff9800;
+                color: #ffffff;
+              }
+
+              progress{
+                width: 100%;
+                height: 25px;
+              }
+            </style>
+          </div>
+        </div>
+        
+        <div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-vbox">
+          <div class="p-Widget jupyter-widgets widget-inline-hbox widget-html">
+            <label class="widget-label" title="" style="display: none;"></label>
+            
+            <div class="widget-html-content"></div>
+          </div>
+          <div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox">
+            <div class="p-Widget jupyter-widgets widget-label" style="width: 35%;">UTD:</div>
+            <div class="p-Widget jupyter-widgets widget-inline-hbox widget-dropdown" style="height: 30px; width: 20%;">
+              <label class="widget-label" title="" for="48993c7d-21a9-4cc6-a074-3759ecb63be0" style="display: none;"></label>
+              <select id="48993c7d-21a9-4cc6-a074-3759ecb63be0">
+                <option data-value="ALAGOINHAS" value="ALAGOINHAS">ALAGOINHAS</option>
+                <option data-value="AMARGOSA" value="AMARGOSA">AMARGOSA</option>
+                <option data-value="BARREIRAS" value="BARREIRAS">BARREIRAS</option>
+                <option data-value="BOM%20JESUS%20DA%20LAPA" value="BOM JESUS DA LAPA">BOM&nbsp;JESUS&nbsp;DA&nbsp;LAPA</option>
+                <option data-value="BRUMADO" value="BRUMADO">BRUMADO</option>
+                <option data-value="CAMACARI" value="CAMACARI">CAMACARI</option>
+                <option data-value="CANDEIAS" value="CANDEIAS">CANDEIAS</option>
+                <option data-value="CONCEICAO%20DO%20COITE" value="CONCEICAO DO COITE">CONCEICAO&nbsp;DO&nbsp;COITE</option>
+                <option data-value="ESPLANADA" value="ESPLANADA">ESPLANADA</option>
+                <option data-value="EUNAPOLIS" value="EUNAPOLIS">EUNAPOLIS</option>
+                <option data-value="FEIRA%20DE%20SANTANA%20NORTE" value="FEIRA DE SANTANA NORTE">FEIRA&nbsp;DE&nbsp;SANTANA&nbsp;NORTE</option>
+                <option data-value="FEIRA%20DE%20SANTANA%20SUL" value="FEIRA DE SANTANA SUL">FEIRA&nbsp;DE&nbsp;SANTANA&nbsp;SUL</option>
+                <option data-value="GRACA" value="GRACA">GRACA</option>
+                <option data-value="GUANAMBI" value="GUANAMBI">GUANAMBI</option>
+                <option data-value="IBOTIRAMA" value="IBOTIRAMA">IBOTIRAMA</option>
+                <option data-value="ILHEUS" value="ILHEUS">ILHEUS</option>
+                <option data-value="IPIAU" value="IPIAU">IPIAU</option>
+                <option data-value="IRECE" value="IRECE">IRECE</option>
+                <option data-value="ITABERABA" value="ITABERABA">ITABERABA</option>
+                <option data-value="ITABUNA" value="ITABUNA">ITABUNA</option>
+                <option data-value="ITAPETINGA" value="ITAPETINGA">ITAPETINGA</option>
+                <option data-value="ITAPOAN" value="ITAPOAN">ITAPOAN</option>
+                <option data-value="JACOBINA" value="JACOBINA">JACOBINA</option>
+                <option data-value="JEQUIE" value="JEQUIE">JEQUIE</option>
+                <option data-value="JUAZEIRO" value="JUAZEIRO">JUAZEIRO</option>
+                <option data-value="LAURO%20DE%20FREITAS" value="LAURO DE FREITAS">LAURO&nbsp;DE&nbsp;FREITAS</option>
+                <option data-value="LIVRAMENTO%20DE%20NOSSA%20SENHORA" value="LIVRAMENTO DE NOSSA SENHORA">LIVRAMENTO&nbsp;DE&nbsp;NOSSA&nbsp;SENHORA</option>
+                <option data-value="LUIS%20EDUARDO%20MAGALHAES" value="LUIS EDUARDO MAGALHAES">LUIS&nbsp;EDUARDO&nbsp;MAGALHAES</option>
+                <option data-value="PAULO%20AFONSO" value="PAULO AFONSO">PAULO&nbsp;AFONSO</option>
+                <option data-value="PERIPERI" value="PERIPERI">PERIPERI</option>
+                <option data-value="PIRAJA" value="PIRAJA">PIRAJA</option>
+                <option data-value="PITUBA" value="PITUBA">PITUBA</option>
+                <option data-value="PORTO%20SEGURO" value="PORTO SEGURO">PORTO&nbsp;SEGURO</option>
+                <option data-value="POSTO%20DA%20MATA" value="POSTO DA MATA">POSTO&nbsp;DA&nbsp;MATA</option>
+                <option data-value="REMANSO" value="REMANSO">REMANSO</option>
+                <option data-value="RIBEIRA%20DO%20POMBAL" value="RIBEIRA DO POMBAL">RIBEIRA&nbsp;DO&nbsp;POMBAL</option>
+                <option data-value="SANTA%20MARIA%20DA%20VITORIA" value="SANTA MARIA DA VITORIA">SANTA&nbsp;MARIA&nbsp;DA&nbsp;VITORIA</option>
+                <option data-value="SANTO%20AMARO" value="SANTO AMARO">SANTO&nbsp;AMARO</option>
+                <option data-value="SANTO%20ANTONIO%20DE%20JESUS" value="SANTO ANTONIO DE JESUS">SANTO&nbsp;ANTONIO&nbsp;DE&nbsp;JESUS</option>
+                <option data-value="SEABRA" value="SEABRA">SEABRA</option>
+                <option data-value="SENHOR%20DO%20BONFIM" value="SENHOR DO BONFIM">SENHOR&nbsp;DO&nbsp;BONFIM</option>
+                <option data-value="SERRINHA" value="SERRINHA">SERRINHA</option>
+                <option data-value="TEIXEIRA%20DE%20FREITAS" value="TEIXEIRA DE FREITAS">TEIXEIRA&nbsp;DE&nbsp;FREITAS</option>
+                <option data-value="VALENCA" value="VALENCA">VALENCA</option>
+                <option data-value="VITORIA%20DA%20CONQUISTA" value="VITORIA DA CONQUISTA">VITORIA&nbsp;DA&nbsp;CONQUISTA</option>
+                <option data-value="" value=""></option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox">
+            <div class="p-Widget jupyter-widgets widget-label" style="width: 35%;">Zona:</div>
+            <div class="p-Widget jupyter-widgets widget-inline-hbox widget-dropdown" style="height: 30px; width: 20%;">
+              <label class="widget-label" title="" for="19b11c0f-5592-4582-b6fd-f0667f5177c3" style="display: none;"></label>
+              <select id="19b11c0f-5592-4582-b6fd-f0667f5177c3">
+                  <option data-value="%20" value=" ">&nbsp;</option>
+                  <option data-value="0001" value="0001">0001</option>
+                  <option data-value="0002" value="0002">0002</option>
+                  <option data-value="0003" value="0003">0003</option>
+                  <option data-value="0004" value="0004">0004</option>
+                  <option data-value="None" value="None">None</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox">
+            <div class="p-Widget jupyter-widgets widget-label" style="width: 35%;">Localidade:</div>
+            <div class="p-Widget jupyter-widgets widget-inline-hbox widget-text" style="height: 40px; width: 20%;">
+              <label class="widget-label" title="" for="e61b135f-f367-4e2d-9db5-fa4673bb3d1f" style="display: none;"></label>
+              <input type="text" id="e61b135f-f367-4e2d-9db5-fa4673bb3d1f" placeholder="&#8203;"></div></div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox">
+                <div class="p-Widget jupyter-widgets widget-label" style="width: 35%;">Município:</div>
+                <div class="p-Widget jupyter-widgets widget-inline-hbox widget-dropdown" style="height: 30px; width: 20%;">
+                  <label class="widget-label" title="" for="587b5f2f-5fdd-424f-a566-15493ba96854" style="display: none;"></label>
+                  <select id="587b5f2f-5fdd-424f-a566-15493ba96854">
+                    <option data-value="%20" value=" ">&nbsp;</option>
+                    <option data-value="ALAGOINHAS" value="ALAGOINHAS">ALAGOINHAS</option>
+                    <option data-value="ARACAS" value="ARACAS">ARACAS</option>
+                    <option data-value="ARAMARI" value="ARAMARI">ARAMARI</option>
+                    <option data-value="CATU" value="CATU">CATU</option>
+                    <option data-value="INHAMBUPE" value="INHAMBUPE">INHAMBUPE</option>
+                    <option data-value="ITANAGRA" value="ITANAGRA">ITANAGRA</option>
+                    <option data-value="PEDRAO" value="PEDRAO">PEDRAO</option>
+                    <option data-value="POJUCA" value="POJUCA">POJUCA</option>
+                  </select>
+                </div>
+              </div>
+              <div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox">
+                <div class="p-Widget jupyter-widgets widget-label" style="width: 35%;">Bairros:</div>
+                <div class="p-Widget jupyter-widgets widget-inline-hbox widget-text" style="height: 40px; width: 20%;">
+                  <label class="widget-label" title="" for="0d2cff31-2299-4450-a3c4-ccfac2a573d5" style="display: none;"></label>
+                  <input type="text" id="0d2cff31-2299-4450-a3c4-ccfac2a573d5" placeholder="&#8203;">
+                </div>
+              </div>
+              <div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox">
+                <div class="p-Widget jupyter-widgets widget-label" style="height: 45px; width: 35%;">Tipo da localização:</div>
+                <div class="p-Widget jupyter-widgets widget-inline-hbox widget-dropdown" style="height: 30px; width: 20%;">
+                  <label class="widget-label" title="" for="a16c6dc9-d72d-4ea0-8ccf-274ed1eaa953" style="display: none;"></label>
+                  <select id="a16c6dc9-d72d-4ea0-8ccf-274ed1eaa953">
+                    <option data-value="Rural%20e%20Urbana" value="Rural e Urbana">Rural&nbsp;e&nbsp;Urbana</option>
+                    <option data-value="Urbana" value="Urbana">Urbana</option>
+                    <option data-value="Rural" value="Rural">Rural</option>
+                  </select>
+                </div>
+              </div>
+              <div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox">
+                <div class="p-Widget jupyter-widgets widget-label" style="height: 45px; width: 35%;">Método de seleção:</div>
+                <div class="p-Widget jupyter-widgets widget-inline-hbox widget-dropdown" style="height: 30px; width: 20%;">
+                  <label class="widget-label" title="" for="8bf9dc97-fc8e-4a58-bd3f-979ca81053c2" style="display: none;"></label>
+                  <select id="8bf9dc97-fc8e-4a58-bd3f-979ca81053c2">
+                    <option data-value="nkcnk" value="nkcnk">nkcnk</option>
+                    <option data-value="fast%20nkcnk" value="fast nkcnk">fast&nbsp;nkcnk</option>
+                  </select>
+                </div>
+              </div>
+              <div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox">
+                <div class="p-Widget jupyter-widgets widget-label" style="width: 35%;">Peso da PECLD:</div>
+                <div class="p-Widget jupyter-widgets widget-inline-hbox widget-text" style="height: 40px; width: 20%;">
+                  <label class="widget-label" title="" for="d9e899fd-8d13-4231-b134-9f949969307a" style="display: none;"></label>
+                  <input type="text" id="d9e899fd-8d13-4231-b134-9f949969307a" placeholder="&#8203;">
+                </div>
+              </div>
+              <div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox">
+                <div class="p-Widget jupyter-widgets widget-label" style="width: 35%;">Peso do MTVCOB:</div>
+                <div class="p-Widget jupyter-widgets widget-inline-hbox widget-text" style="height: 40px; width: 20%;">
+                  <label class="widget-label" title="" for="89f23d36-450d-4cbf-a9c8-7970f190fd7f" style="display: none;"></label>
+                  <input type="text" id="89f23d36-450d-4cbf-a9c8-7970f190fd7f" placeholder="&#8203;">
+                </div>
+              </div>
+              <div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox">
+                <div class="p-Widget jupyter-widgets widget-label" style="width: 35%;">Peso da QTFTVE:</div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-text" style="height: 40px; width: 20%;"><label class="widget-label" title="" for="009827ec-3458-43db-b4cb-353b8797feb1" style="display: none;"></label><input type="text" id="009827ec-3458-43db-b4cb-353b8797feb1" placeholder="&#8203;"></div></div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox"><div class="p-Widget jupyter-widgets widget-inline-hbox widget-checkbox" style="height: 40px; width: 50%;"><label class="widget-label" style="display: none;">&#8203;</label><label class="widget-label-basic"><input type="checkbox" title="Calcular IRR"><span title="Calcular IRR">Calcular IRR</span></label></div></div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox"><div class="p-Widget jupyter-widgets widget-label" style="width: 35%;">Número de clusters (n):</div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-text" style="height: 40px; width: 20%;"><label class="widget-label" title="" for="91e5ef18-b7b0-4303-8c63-5c45dfa4d860" style="display: none;"></label><input type="text" id="91e5ef18-b7b0-4303-8c63-5c45dfa4d860" placeholder="&#8203;"></div></div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox"><div class="p-Widget jupyter-widgets widget-label" style="width: 35%;">Número máximo de clientes em um cluster (k):</div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-text" style="height: 40px; width: 20%;"><label class="widget-label" title="" for="24de0c7c-1cf0-4405-b7ce-e2c37cc1db0a" style="display: none;"></label><input type="text" id="24de0c7c-1cf0-4405-b7ce-e2c37cc1db0a" placeholder="&#8203;"></div></div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox"><div class="p-Widget jupyter-widgets widget-label" style="width: 35%;">Número mínimo desejado de clientes em um cluster:</div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-text" style="height: 40px; width: 20%;"><label class="widget-label" title="" for="1253ac62-e14a-432e-bb32-367367def5f0" style="display: none;"></label><input type="text" id="1253ac62-e14a-432e-bb32-367367def5f0" placeholder="&#8203;"></div></div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox"><div class="p-Widget jupyter-widgets widget-inline-hbox widget-checkbox" style="height: 40px; width: 50%;"><label class="widget-label" style="display: none;">&#8203;</label><label class="widget-label-basic"><input type="checkbox" title=" Precisão do raio máximo dos cluster"><span title=" Precisão do raio máximo dos cluster"> Precisão do raio máximo dos cluster</span></label></div></div><button class="p-Widget jupyter-widgets jupyter-button widget-button mod-success" title="" style="height: 35px; width: 99%;">Salvar</button></div></div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-vbox p-mod-hidden" style="min-height: 500px;"><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-vbox"><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox"><div class="p-Widget jupyter-widgets widget-label" style="width: 20%;">Lista de raios a serem testados:</div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-text" style="height: 45px; width: 80%;"><label class="widget-label" title="" for="0674915c-bf39-4a36-82db-43f9b200f1d9" style="display: none;"></label><input type="text" id="0674915c-bf39-4a36-82db-43f9b200f1d9" placeholder="&#8203;"></div></div><button class="p-Widget jupyter-widgets jupyter-button widget-button mod-success" title="" style="height: 35px; width: 99.4%;">Realizar testagem</button><div class="p-Widget jupyter-widgets widget-inline-hbox widget-html"><label class="widget-label" title="" style="display: none;"></label><div class="widget-html-content"></div></div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-html"><label class="widget-label" title="" style="display: none;"></label><div class="widget-html-content"></div></div></div></div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-vbox p-mod-hidden"><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-vbox"><div class="p-Widget jupyter-widgets widget-inline-hbox widget-html"><label class="widget-label" title="" style="display: none;"></label><div class="widget-html-content"></div></div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox"><div class="p-Widget jupyter-widgets widget-inline-hbox widget-text" style="height: 45px; width: 40%;"><label class="widget-label" title="r :" for="dbacf176-a86f-4889-8b28-c4a22922c6b5" style="">r :</label><input type="text" id="dbacf176-a86f-4889-8b28-c4a22922c6b5" placeholder="&#8203;"></div><button class="p-Widget jupyter-widgets jupyter-button widget-button mod-success" title="" style="height: 28px; width: 30%;">Realizar seleção</button></div><div class="p-Widget jupyter-widgets widget-label" style="width: 20%;">Adicionar cliente à seleção</div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox"><div class="p-Widget jupyter-widgets widget-inline-hbox widget-text" style="height: 45px; width: 20%;"><label class="widget-label" title="CC" for="f921090d-b80f-4d96-b63e-91661472d5c6" style="">CC</label><input type="text" id="f921090d-b80f-4d96-b63e-91661472d5c6" placeholder="&#8203;"></div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-dropdown" style="height: 30px; width: 20%;"><label class="widget-label" title="Cluster" for="e3ea5ded-0201-4070-8dbb-0b46ecf327fb" style="">Cluster</label><select id="e3ea5ded-0201-4070-8dbb-0b46ecf327fb"><option data-value="Cluster_0" value="Cluster_0">Cluster_0</option></select></div><button class="p-Widget jupyter-widgets jupyter-button widget-button mod-info" title="" style="height: 28px; width: 30%;">Adicionar</button></div><div class="p-Widget jupyter-widgets widget-label" style="width: 50%;">Trocar cluster de clienter selecionado</div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox"><div class="p-Widget jupyter-widgets widget-inline-hbox widget-text" style="height: 45px; width: 20%;"><label class="widget-label" title="CC" for="30e9edd2-ae09-4571-9a16-5fac7d58b732" style="">CC</label><input type="text" id="30e9edd2-ae09-4571-9a16-5fac7d58b732" placeholder="&#8203;"></div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-dropdown" style="height: 30px; width: 20%;"><label class="widget-label" title="Cluster" for="5be00e4a-65ae-4ea8-a988-2be81acf540d" style="">Cluster</label><select id="5be00e4a-65ae-4ea8-a988-2be81acf540d"><option data-value="Cluster_0" value="Cluster_0">Cluster_0</option></select></div><button class="p-Widget jupyter-widgets jupyter-button widget-button mod-warning" title="" style="height: 28px; width: 30%;">Trocar</button></div><div class="p-Widget jupyter-widgets widget-label" style="width: 20%;">Remover cliente da seleção:</div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox"><div class="p-Widget jupyter-widgets widget-inline-hbox widget-text" style="height: 45px; width: 40%;"><label class="widget-label" title="CC" for="921a2e4a-9fee-4a01-9421-ab65f9c48c94" style="">CC</label><input type="text" id="921a2e4a-9fee-4a01-9421-ab65f9c48c94" placeholder="&#8203;"></div><button class="p-Widget jupyter-widgets jupyter-button widget-button mod-danger" title="" style="height: 28px; width: 30%;">Remover</button></div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-html"><label class="widget-label" title="" style="display: none;"></label><div class="widget-html-content"><table>
+                            <tbody><tr>
+                                <th>CLUSTER</th>
+                                <th>CLIENTES</th>
+                                <th>RAIO (m)</th>
+                                <th>MTVCOB (R$)</th>
+                                <th>PECLD (R$)</th>
+                          
+                                            </tr><tr>
+                                                <td>Cluster_0</td>
+                                                <td>16 clientes</td>
+                                                <td>2585.07 metros </td>
+                                                <td>8.710,95 (3,37)</td>
+                                                <td>1.693,56 (0,66)</td>
+                                            </tr>
+                                         
+                                            <tr>
+                                                <td>TOTAL</td>
+                                                <td>16 clientes</td>
+                                                <td></td>
+                                                <td><strong>8.710,95 (3,37) </strong></td>
+                                                <td><strong>1.693,56 (0,66) </strong></td>
+                                            </tr>
+                                         </tbody></table><div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -&gt; Trust Notebook</span><iframe src="about:blank" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" data-html= onload="this.contentDocument.open();this.contentDocument.write(    decodeURIComponent(this.getAttribute('data-html')));this.contentDocument.close();" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe></div></div></div></div></div></div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-vbox p-mod-hidden" style="min-height: 500px;"><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-vbox"><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-vbox"><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox"><button class="p-Widget jupyter-widgets jupyter-button widget-button mod-success" title="" style="height: 28px; width: 50%;">Baixar CSV</button><button class="p-Widget jupyter-widgets jupyter-button widget-button mod-info" title="" style="height: 28px; width: 50%;">Baixar mapa</button></div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox"><button class="p-Widget jupyter-widgets jupyter-button widget-button mod-success" title="" style="height: 28px; width: 50%;">Baixar XLSX</button><button class="p-Widget jupyter-widgets jupyter-button widget-button mod-info" title="" style="height: 28px; width: 50%;">Inserir seleção na Massiva</button></div></div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox"><div class="p-Widget jupyter-widgets widget-inline-hbox widget-html" style="width: 50%;"><label class="widget-label" title="" style="display: none;"></label><div class="widget-html-content"></div></div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-html" style="width: 50%;"><label class="widget-label" title="" style="display: none;"></label><div class="widget-html-content"></div></div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-html" style="width: 50%;"><label class="widget-label" title="" style="display: none;"></label><div class="widget-html-content"> 
+                           <a href="resultados/selecao_SANTA MARIA DA VITORIA_2401.xlsx" target="_blank">resultados/selecao_SANTA MARIA DA VITORIA_2401.xlsx</a><br>
+                            </div></div></div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-html" style="height: 45px; width: 90%;"><label class="widget-label" title="" style="display: none;"></label><div class="widget-html-content">Clientes selecionados</div></div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-html"><label class="widget-label" title="" style="display: none;"></label><div class="widget-html-content"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ZCGACCOUN</th>
+      <th>UTD</th>
+      <th>ZONA</th>
+      <th>ZCGMUNICI</th>
+      <th>ZCGBAIRRO</th>
+      <th>MTV_COB</th>
+      <th>PECLD</th>
+      <th>cluster</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>81968</th>
+      <td>007066249241</td>
+      <td>SANTA MARIA DA VITORIA</td>
+      <td>0412</td>
+      <td>CORRENTINA</td>
+      <td>CENTRO-ROSARIO</td>
+      <td>857.02</td>
+      <td>121.509423</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>76099</th>
+      <td>007030557705</td>
+      <td>SANTA MARIA DA VITORIA</td>
+      <td>0412</td>
+      <td>CORRENTINA</td>
+      <td>CENTRO-ROSARIO</td>
+      <td>845.58</td>
+      <td>128.712120</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4014</th>
+      <td>007050507585</td>
+      <td>SANTA MARIA DA VITORIA</td>
+      <td>0412</td>
+      <td>CORRENTINA</td>
+      <td>CENTRO-ROSARIO</td>
+      <td>733.03</td>
+      <td>108.618858</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>105169</th>
+      <td>007038329116</td>
+      <td>SANTA MARIA DA VITORIA</td>
+      <td>0412</td>
+      <td>CORRENTINA</td>
+      <td>CENTRO-ROSARIO</td>
+      <td>653.01</td>
+      <td>99.359399</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>81988</th>
+      <td>007023694500</td>
+      <td>SANTA MARIA DA VITORIA</td>
+      <td>0412</td>
+      <td>CORRENTINA</td>
+      <td>CENTRO-ROSARIO</td>
+      <td>651.55</td>
+      <td>136.038598</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>125467</th>
+      <td>000207499196</td>
+      <td>SANTA MARIA DA VITORIA</td>
+      <td>0412</td>
+      <td>CORRENTINA</td>
+      <td>CENTRO-ROSARIO</td>
+      <td>563.12</td>
+      <td>94.646378</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>70834</th>
+      <td>007034065106</td>
+      <td>SANTA MARIA DA VITORIA</td>
+      <td>0412</td>
+      <td>CORRENTINA</td>
+      <td>PRIMAVERA DO OESTE</td>
+      <td>540.12</td>
+      <td>161.376841</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>886</th>
+      <td>007068447040</td>
+      <td>SANTA MARIA DA VITORIA</td>
+      <td>0412</td>
+      <td>CORRENTINA</td>
+      <td>CENTRO-ROSARIO</td>
+      <td>494.90</td>
+      <td>120.553227</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2963</th>
+      <td>007060949004</td>
+      <td>SANTA MARIA DA VITORIA</td>
+      <td>0412</td>
+      <td>CORRENTINA</td>
+      <td>PRIMAVERA DO OESTE</td>
+      <td>472.55</td>
+      <td>142.317185</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>125418</th>
+      <td>007068126112</td>
+      <td>SANTA MARIA DA VITORIA</td>
+      <td>0412</td>
+      <td>CORRENTINA</td>
+      <td>CENTRO-ROSARIO</td>
+      <td>449.77</td>
+      <td>94.259172</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>81940</th>
+      <td>007023456030</td>
+      <td>SANTA MARIA DA VITORIA</td>
+      <td>0412</td>
+      <td>CORRENTINA</td>
+      <td>CENTRO-ROSARIO</td>
+      <td>436.76</td>
+      <td>109.743600</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>105231</th>
+      <td>007034005170</td>
+      <td>SANTA MARIA DA VITORIA</td>
+      <td>0412</td>
+      <td>CORRENTINA</td>
+      <td>CENTRO-ROSARIO</td>
+      <td>434.55</td>
+      <td>49.204511</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>83040</th>
+      <td>007054485055</td>
+      <td>SANTA MARIA DA VITORIA</td>
+      <td>0412</td>
+      <td>CORRENTINA</td>
+      <td>PRIMAVERA DO OESTE</td>
+      <td>434.32</td>
+      <td>74.426004</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>20985</th>
+      <td>007034480570</td>
+      <td>SANTA MARIA DA VITORIA</td>
+      <td>0412</td>
+      <td>CORRENTINA</td>
+      <td>CENTRO-ROSARIO</td>
+      <td>401.78</td>
+      <td>74.954441</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>781</th>
+      <td>007049403822</td>
+      <td>SANTA MARIA DA VITORIA</td>
+      <td>0412</td>
+      <td>CORRENTINA</td>
+      <td>CENTRO-ROSARIO</td>
+      <td>391.19</td>
+      <td>95.369686</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>83096</th>
+      <td>007032458127</td>
+      <td>SANTA MARIA DA VITORIA</td>
+      <td>0412</td>
+      <td>CORRENTINA</td>
+      <td>PRIMAVERA DO OESTE</td>
+      <td>351.70</td>
+      <td>82.472370</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table></div></div></div></div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-vbox p-mod-hidden" style="min-height: 500px;"><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox"><div class="p-Widget jupyter-widgets widget-label" style="height: 45px; width: 15%;">Ordenar por:</div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-dropdown" style="height: 30px; width: 25%;"><label class="widget-label" title="" for="81a8bbb0-e61e-4663-a435-555b9e7eee4e" style="display: none;"></label><select id="81a8bbb0-e61e-4663-a435-555b9e7eee4e"><option data-value="QTFTVE" value="QTFTVE">QTFTVE</option><option data-value="PECLD" value="PECLD">PECLD</option><option data-value="MTVCOB" value="MTVCOB">MTVCOB</option></select></div></div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox"><div class="p-Widget jupyter-widgets widget-label" style="width: 15%;">Qtd. de devedores:</div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-text" style="height: 40px; width: 25%;"><label class="widget-label" title="" for="94964154-d352-45d0-876d-d849a56f713d" style="display: none;"></label><input type="number" required="" id="94964154-d352-45d0-876d-d849a56f713d" step="1"></div></div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox"><div class="p-Widget jupyter-widgets widget-label" style="width: 15%;">UTD:</div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-text" style="height: 40px; width: 25%;"><label class="widget-label" title="" for="4ed9a8ff-f305-4d10-861c-75957a18b206" style="display: none;"></label><input type="text" id="4ed9a8ff-f305-4d10-861c-75957a18b206" placeholder="&#8203;"></div></div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox"><div class="p-Widget jupyter-widgets widget-label" style="width: 15%;">Zona:</div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-text" style="height: 40px; width: 25%;"><label class="widget-label" title="" for="a5055d9f-a1cc-4886-94e3-bd60aa9ed8f2" style="display: none;"></label><input type="text" id="a5055d9f-a1cc-4886-94e3-bd60aa9ed8f2" placeholder="&#8203;"></div></div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox"><div class="p-Widget jupyter-widgets widget-label" style="width: 15%;">Município:</div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-text" style="height: 40px; width: 25%;"><label class="widget-label" title="" for="ff5df9ae-b48f-44ae-87c1-116d0dfe79c8" style="display: none;"></label><input type="text" id="ff5df9ae-b48f-44ae-87c1-116d0dfe79c8" placeholder="&#8203;"></div></div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox"><div class="p-Widget jupyter-widgets widget-label" style="width: 15%;">Localidade:</div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-text" style="height: 40px; width: 25%;"><label class="widget-label" title="" for="759bd7b5-cd15-47e2-a3f0-b9c953042934" style="display: none;"></label><input type="text" id="759bd7b5-cd15-47e2-a3f0-b9c953042934" placeholder="&#8203;"></div></div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox"><div class="p-Widget jupyter-widgets widget-label" style="width: 15%;">Bairro:</div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-text" style="height: 40px; width: 25%;"><label class="widget-label" title="" for="8a8de15f-5bb6-4cb4-9527-ebc7404e75c6" style="display: none;"></label><input type="text" id="8a8de15f-5bb6-4cb4-9527-ebc7404e75c6" placeholder="&#8203;"></div></div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox"><button class="p-Widget jupyter-widgets jupyter-button widget-button mod-success" title="" style="height: 35px; width: 50%;">Pesquisar</button><button class="p-Widget jupyter-widgets jupyter-button widget-button mod-info" title="" style="height: 35px; width: 50%;">Salvar</button></div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-html"><label class="widget-label" title="" style="display: none;"></label><div class="widget-html-content"></div></div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox" style="height: 800px; overflow-y: auto;"><div class="p-Widget jupyter-widgets widget-inline-hbox widget-html"><label class="widget-label" title="" style="display: none;"></label><div class="widget-html-content"></div></div></div></div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-vbox p-mod-hidden"><div class="p-Widget jupyter-widgets widget-inline-hbox widget-html"><label class="widget-label" title="" style="display: none;"></label><div class="widget-html-content"></div></div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox"><div class="p-Widget jupyter-widgets widget-label" style="height: 45px; width: 170px;">Configuração da seleção:</div><button class="p-Widget jupyter-widgets widget-upload jupyter-button" title=""><i class="fa fa-upload"></i>Upload (0)</button><div class="p-Widget jupyter-widgets widget-label" style="height: 45px; margin: 0px;">Método:</div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-dropdown" style="height: 30px; margin: 0px; width: 100px;"><label class="widget-label" title="" for="d3416b0d-45fd-4113-9942-2a147ce0d8fa" style="display: none;"></label><select id="d3416b0d-45fd-4113-9942-2a147ce0d8fa"><option data-value="nkcnk" value="nkcnk">nkcnk</option><option data-value="fast%20nkcnk" value="fast nkcnk">fast&nbsp;nkcnk</option></select></div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-checkbox" style="height: 40px; width: 180px;"><label class="widget-label" style="display: none;">&#8203;</label><label class="widget-label-basic"><input type="checkbox" title=" Importar Configuração"><span title=" Importar Configuração"> Importar Configuração</span></label></div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-checkbox" style="height: 40px; width: 115px;"><label class="widget-label" style="display: none;">&#8203;</label><label class="widget-label-basic"><input type="checkbox" title="Calcular IRR"><span title="Calcular IRR">Calcular IRR</span></label></div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-checkbox" style="height: 40px; width: 150px;"><label class="widget-label" style="display: none;">&#8203;</label><label class="widget-label-basic"><input type="checkbox" title=" Precisão do raio"><span title=" Precisão do raio"> Precisão do raio</span></label></div></div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox"><div class="p-Widget jupyter-widgets widget-label" style="height: 45px; margin: 0px;">Nome do Arquivo de Saída:</div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-text" style="height: 30px; margin: 0px 40px 0px 20px;"><label class="widget-label" title="" for="15da164a-bb3e-40b9-a8ca-35acc1183171" style="display: none;"></label><input type="text" id="15da164a-bb3e-40b9-a8ca-35acc1183171" placeholder="&#8203;"></div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-checkbox" style="height: 40px; width: 180px;"><label class="widget-label" style="display: none;">&#8203;</label><label class="widget-label-basic"><input type="checkbox" title="Plotar Clusters"><span title="Plotar Clusters">Plotar Clusters</span></label></div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-checkbox" style="height: 40px; width: 200px;"><label class="widget-label" style="display: none;">&#8203;</label><label class="widget-label-basic"><input type="checkbox" title="Utilizar Multiprocessamento"><span title="Utilizar Multiprocessamento">Utilizar Multiprocessamento</span></label></div></div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox"><div class="p-Widget jupyter-widgets widget-label" style="height: 45px; margin: 0px; width: 120px;">Destaque PECLD:</div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-text" style="height: 30px; margin: 0px 40px 0px 0px; width: 80px;"><label class="widget-label" title="" for="dedb745e-dc8d-42ab-a2fd-872d2abca936" style="display: none;"></label><input type="number" required="" id="dedb745e-dc8d-42ab-a2fd-872d2abca936" step="1"></div><div class="p-Widget jupyter-widgets widget-label" style="height: 45px; margin: 0px; width: 120px;">Destaque MTVCOB:</div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-text" style="height: 30px; margin: 0px 40px 0px 0px; width: 80px;"><label class="widget-label" title="" for="b62dc1d1-8a4c-41fd-9139-8780f8fad10f" style="display: none;"></label><input type="number" required="" id="b62dc1d1-8a4c-41fd-9139-8780f8fad10f" step="1"></div><div class="p-Widget jupyter-widgets widget-label" style="height: 45px; margin: 0px; width: 120px;">Destaque QTFTVE:</div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-text" style="height: 30px; margin: 0px 40px 0px 0px; width: 80px;"><label class="widget-label" title="" for="783fb58b-f10a-4e25-af56-1f439b6ba7b0" style="display: none;"></label><input type="number" required="" id="783fb58b-f10a-4e25-af56-1f439b6ba7b0" step="1"></div></div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox"><div class="p-Widget jupyter-widgets widget-label" style="height: 50px; width: 250px;">Inserir Grupo na Seleção:</div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-dropdown" style="height: 28px; margin: 0px 40px 0px 0px; width: 120px;"><label class="widget-label" title="" for="70ca9e1d-c42c-4706-966a-5d3920304efa" style="display: none;"></label><select id="70ca9e1d-c42c-4706-966a-5d3920304efa"><option data-value="cluster_id" value="cluster_id">cluster_id</option><option data-value="UTD" value="UTD">UTD</option><option data-value="ZONA" value="ZONA">ZONA</option></select></div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-text" style="height: 30px; margin: 0px 40px 0px 0px; width: 200px;"><label class="widget-label" title="" for="946904a9-2e8c-4bde-abf2-7d2f6a4d6d89" style="display: none;"></label><input type="text" id="946904a9-2e8c-4bde-abf2-7d2f6a4d6d89" placeholder="&#8203;"></div><button class="p-Widget jupyter-widgets jupyter-button widget-button mod-info" title="" style="height: 30px; margin: 0px; width: 120px;">Inserir</button></div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox"><div class="p-Widget jupyter-widgets widget-label" style="height: 50px; margin: 0px; width: 250px;">Inserir Contas na Seleção:</div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-text" style="height: 30px; margin: 0px 40px 0px 0px; width: 200px;"><label class="widget-label" title="" for="50d61817-59af-4a52-81bf-444186e0d742" style="display: none;"></label><input type="text" id="50d61817-59af-4a52-81bf-444186e0d742" placeholder="&#8203;"></div><div class="p-Widget jupyter-widgets widget-label" style="height: 50px; margin: 0px; width: 100px;">Cluster ID:</div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-dropdown" style="height: 28px; margin: 0px 40px 0px 0px; width: 200px;"><label class="widget-label" title="" for="d57912bf-09b1-44a2-b878-09353ef13c6c" style="display: none;"></label><select id="d57912bf-09b1-44a2-b878-09353ef13c6c"><option data-value="0484_1" value="0484_1">0484_1</option><option data-value="0253_1" value="0253_1">0253_1</option><option data-value="0253_2" value="0253_2">0253_2</option><option data-value="0001_3" value="0001_3">0001_3</option><option data-value="0001_1" value="0001_1">0001_1</option><option data-value="0001_4" value="0001_4">0001_4</option><option data-value="0001_2" value="0001_2">0001_2</option><option data-value="0127_1" value="0127_1">0127_1</option><option data-value="0227_2" value="0227_2">0227_2</option><option data-value="0227_1" value="0227_1">0227_1</option><option data-value="0142_1" value="0142_1">0142_1</option><option data-value="0470_1" value="0470_1">0470_1</option><option data-value="0189_1" value="0189_1">0189_1</option><option data-value="0397_1" value="0397_1">0397_1</option><option data-value="0520_1" value="0520_1">0520_1</option><option data-value="0318_1" value="0318_1">0318_1</option><option data-value="0482_1" value="0482_1">0482_1</option><option data-value="0322_1" value="0322_1">0322_1</option><option data-value="0355_2" value="0355_2">0355_2</option><option data-value="0355_1" value="0355_1">0355_1</option><option data-value="0355_3" value="0355_3">0355_3</option><option data-value="0468_1" value="0468_1">0468_1</option><option data-value="0208_1" value="0208_1">0208_1</option><option data-value="0369_1" value="0369_1">0369_1</option><option data-value="0389_2" value="0389_2">0389_2</option><option data-value="0389_1" value="0389_1">0389_1</option><option data-value="0436_1" value="0436_1">0436_1</option><option data-value="0118_1" value="0118_1">0118_1</option><option data-value="0405_1" value="0405_1">0405_1</option><option data-value="0261_1" value="0261_1">0261_1</option><option data-value="0264_1" value="0264_1">0264_1</option><option data-value="0376_1" value="0376_1">0376_1</option><option data-value="0366_1" value="0366_1">0366_1</option><option data-value="0179_1" value="0179_1">0179_1</option><option data-value="0151_1" value="0151_1">0151_1</option><option data-value="0496_1" value="0496_1">0496_1</option><option data-value="0214_1" value="0214_1">0214_1</option><option data-value="0343_1" value="0343_1">0343_1</option><option data-value="0353_2" value="0353_2">0353_2</option><option data-value="0353_3" value="0353_3">0353_3</option><option data-value="0353_1" value="0353_1">0353_1</option><option data-value="0065_2" value="0065_2">0065_2</option><option data-value="0065_1" value="0065_1">0065_1</option><option data-value="0108_1" value="0108_1">0108_1</option><option data-value="0392_2" value="0392_2">0392_2</option><option data-value="0392_1" value="0392_1">0392_1</option><option data-value="0188_1" value="0188_1">0188_1</option><option data-value="0399_1" value="0399_1">0399_1</option><option data-value="0116_2" value="0116_2">0116_2</option><option data-value="0116_1" value="0116_1">0116_1</option><option data-value="0519_1" value="0519_1">0519_1</option><option data-value="0291_1" value="0291_1">0291_1</option><option data-value="0063_1" value="0063_1">0063_1</option><option data-value="0295_1" value="0295_1">0295_1</option><option data-value="0372_1" value="0372_1">0372_1</option><option data-value="0372_2" value="0372_2">0372_2</option><option data-value="0292_1" value="0292_1">0292_1</option><option data-value="0263_1" value="0263_1">0263_1</option><option data-value="0371_1" value="0371_1">0371_1</option><option data-value="0231_1" value="0231_1">0231_1</option><option data-value="0450_1" value="0450_1">0450_1</option><option data-value="0229_1" value="0229_1">0229_1</option><option data-value="0219_1" value="0219_1">0219_1</option><option data-value="0524_1" value="0524_1">0524_1</option><option data-value="0476_1" value="0476_1">0476_1</option><option data-value="0153_1" value="0153_1">0153_1</option><option data-value="0143_1" value="0143_1">0143_1</option><option data-value="0038_1" value="0038_1">0038_1</option><option data-value="0135_1" value="0135_1">0135_1</option><option data-value="0135_2" value="0135_2">0135_2</option><option data-value="0135_3" value="0135_3">0135_3</option><option data-value="0107_2" value="0107_2">0107_2</option><option data-value="0107_1" value="0107_1">0107_1</option><option data-value="0254_2" value="0254_2">0254_2</option><option data-value="0254_1" value="0254_1">0254_1</option><option data-value="0534_1" value="0534_1">0534_1</option><option data-value="0363_1" value="0363_1">0363_1</option><option data-value="0441_1" value="0441_1">0441_1</option><option data-value="0196_1" value="0196_1">0196_1</option><option data-value="0391_1" value="0391_1">0391_1</option><option data-value="0391_6" value="0391_6">0391_6</option><option data-value="0391_4" value="0391_4">0391_4</option><option data-value="0391_2" value="0391_2">0391_2</option><option data-value="0391_5" value="0391_5">0391_5</option><option data-value="0391_3" value="0391_3">0391_3</option><option data-value="0046_1" value="0046_1">0046_1</option><option data-value="0298_1" value="0298_1">0298_1</option><option data-value="0090_1" value="0090_1">0090_1</option><option data-value="0009_1" value="0009_1">0009_1</option><option data-value="0409_1" value="0409_1">0409_1</option><option data-value="0409_2" value="0409_2">0409_2</option><option data-value="0069_1" value="0069_1">0069_1</option><option data-value="0390_1" value="0390_1">0390_1</option><option data-value="0213_1" value="0213_1">0213_1</option><option data-value="0111_1" value="0111_1">0111_1</option><option data-value="0111_2" value="0111_2">0111_2</option><option data-value="0480_1" value="0480_1">0480_1</option><option data-value="0429_1" value="0429_1">0429_1</option><option data-value="0221_1" value="0221_1">0221_1</option><option data-value="0141_1" value="0141_1">0141_1</option><option data-value="0342_1" value="0342_1">0342_1</option><option data-value="0128_1" value="0128_1">0128_1</option><option data-value="0012_1" value="0012_1">0012_1</option><option data-value="0404_1" value="0404_1">0404_1</option><option data-value="0379_1" value="0379_1">0379_1</option><option data-value="0064_1" value="0064_1">0064_1</option><option data-value="0144_1" value="0144_1">0144_1</option><option data-value="0527_1" value="0527_1">0527_1</option><option data-value="0518_1" value="0518_1">0518_1</option><option data-value="0285_1" value="0285_1">0285_1</option><option data-value="0407_1" value="0407_1">0407_1</option><option data-value="0242_1" value="0242_1">0242_1</option><option data-value="0362_1" value="0362_1">0362_1</option><option data-value="0383_1" value="0383_1">0383_1</option><option data-value="0052_1" value="0052_1">0052_1</option><option data-value="0310_1" value="0310_1">0310_1</option><option data-value="0088_1" value="0088_1">0088_1</option><option data-value="0358_3" value="0358_3">0358_3</option><option data-value="0358_2" value="0358_2">0358_2</option><option data-value="0358_1" value="0358_1">0358_1</option><option data-value="0415_1" value="0415_1">0415_1</option><option data-value="0375_1" value="0375_1">0375_1</option><option data-value="0106_1" value="0106_1">0106_1</option><option data-value="0197_1" value="0197_1">0197_1</option><option data-value="0239_1" value="0239_1">0239_1</option><option data-value="0020_1" value="0020_1">0020_1</option><option data-value="0077_2" value="0077_2">0077_2</option><option data-value="0077_1" value="0077_1">0077_1</option><option data-value="0445_1" value="0445_1">0445_1</option><option data-value="0481_1" value="0481_1">0481_1</option><option data-value="0378_1" value="0378_1">0378_1</option><option data-value="0464_1" value="0464_1">0464_1</option><option data-value="0195_1" value="0195_1">0195_1</option><option data-value="0454_2" value="0454_2">0454_2</option><option data-value="0454_1" value="0454_1">0454_1</option><option data-value="0523_1" value="0523_1">0523_1</option><option data-value="0259_1" value="0259_1">0259_1</option><option data-value="0184_2" value="0184_2">0184_2</option><option data-value="0184_1" value="0184_1">0184_1</option><option data-value="0124_1" value="0124_1">0124_1</option><option data-value="0124_2" value="0124_2">0124_2</option><option data-value="0124_3" value="0124_3">0124_3</option><option data-value="0256_1" value="0256_1">0256_1</option><option data-value="0503_1" value="0503_1">0503_1</option><option data-value="0503_2" value="0503_2">0503_2</option><option data-value="0092_1" value="0092_1">0092_1</option><option data-value="0152_1" value="0152_1">0152_1</option><option data-value="0102_1" value="0102_1">0102_1</option><option data-value="0498_1" value="0498_1">0498_1</option><option data-value="0462_1" value="0462_1">0462_1</option><option data-value="0007_1" value="0007_1">0007_1</option><option data-value="0007_2" value="0007_2">0007_2</option><option data-value="0245_1" value="0245_1">0245_1</option><option data-value="0493_1" value="0493_1">0493_1</option><option data-value="0332_1" value="0332_1">0332_1</option><option data-value="0505_1" value="0505_1">0505_1</option><option data-value="0494_1" value="0494_1">0494_1</option><option data-value="0494_2" value="0494_2">0494_2</option><option data-value="0209_1" value="0209_1">0209_1</option><option data-value="0233_1" value="0233_1">0233_1</option><option data-value="0531_1" value="0531_1">0531_1</option><option data-value="0491_1" value="0491_1">0491_1</option><option data-value="0448_1" value="0448_1">0448_1</option><option data-value="0008_1" value="0008_1">0008_1</option><option data-value="0359_2" value="0359_2">0359_2</option><option data-value="0359_1" value="0359_1">0359_1</option><option data-value="0243_1" value="0243_1">0243_1</option><option data-value="0316_1" value="0316_1">0316_1</option><option data-value="0110_2" value="0110_2">0110_2</option><option data-value="0110_1" value="0110_1">0110_1</option><option data-value="0246_1" value="0246_1">0246_1</option><option data-value="0350_1" value="0350_1">0350_1</option><option data-value="0350_2" value="0350_2">0350_2</option><option data-value="0284_1" value="0284_1">0284_1</option><option data-value="0050_2" value="0050_2">0050_2</option><option data-value="0050_1" value="0050_1">0050_1</option><option data-value="0328_1" value="0328_1">0328_1</option><option data-value="0320_1" value="0320_1">0320_1</option><option data-value="0043_1" value="0043_1">0043_1</option><option data-value="0230_2" value="0230_2">0230_2</option><option data-value="0230_1" value="0230_1">0230_1</option><option data-value="0356_2" value="0356_2">0356_2</option><option data-value="0356_1" value="0356_1">0356_1</option><option data-value="0134_1" value="0134_1">0134_1</option><option data-value="0134_2" value="0134_2">0134_2</option><option data-value="0217_1" value="0217_1">0217_1</option><option data-value="0005_1" value="0005_1">0005_1</option><option data-value="0457_1" value="0457_1">0457_1</option><option data-value="0418_1" value="0418_1">0418_1</option><option data-value="0228_1" value="0228_1">0228_1</option><option data-value="0211_1" value="0211_1">0211_1</option><option data-value="0211_2" value="0211_2">0211_2</option><option data-value="0530_1" value="0530_1">0530_1</option><option data-value="0098_1" value="0098_1">0098_1</option><option data-value="0411_1" value="0411_1">0411_1</option><option data-value="0206_2" value="0206_2">0206_2</option><option data-value="0206_1" value="0206_1">0206_1</option><option data-value="0091_1" value="0091_1">0091_1</option><option data-value="0093_1" value="0093_1">0093_1</option><option data-value="0049_1" value="0049_1">0049_1</option><option data-value="0058_1" value="0058_1">0058_1</option><option data-value="0058_2" value="0058_2">0058_2</option><option data-value="0058_3" value="0058_3">0058_3</option><option data-value="0058_4" value="0058_4">0058_4</option><option data-value="0010_1" value="0010_1">0010_1</option><option data-value="0417_1" value="0417_1">0417_1</option><option data-value="0428_1" value="0428_1">0428_1</option><option data-value="0226_1" value="0226_1">0226_1</option><option data-value="0446_1" value="0446_1">0446_1</option><option data-value="0178_2" value="0178_2">0178_2</option><option data-value="0178_3" value="0178_3">0178_3</option><option data-value="0178_4" value="0178_4">0178_4</option><option data-value="0178_1" value="0178_1">0178_1</option><option data-value="0294_1" value="0294_1">0294_1</option><option data-value="0140_1" value="0140_1">0140_1</option><option data-value="0055_1" value="0055_1">0055_1</option><option data-value="0352_3" value="0352_3">0352_3</option><option data-value="0352_1" value="0352_1">0352_1</option><option data-value="0352_2" value="0352_2">0352_2</option><option data-value="0257_1" value="0257_1">0257_1</option><option data-value="0085_1" value="0085_1">0085_1</option><option data-value="0348_1" value="0348_1">0348_1</option><option data-value="0348_2" value="0348_2">0348_2</option><option data-value="0526_1" value="0526_1">0526_1</option><option data-value="0201_2" value="0201_2">0201_2</option><option data-value="0201_1" value="0201_1">0201_1</option><option data-value="0133_2" value="0133_2">0133_2</option><option data-value="0133_1" value="0133_1">0133_1</option><option data-value="0514_1" value="0514_1">0514_1</option><option data-value="0083_1" value="0083_1">0083_1</option><option data-value="0109_1" value="0109_1">0109_1</option><option data-value="0109_2" value="0109_2">0109_2</option><option data-value="0109_3" value="0109_3">0109_3</option><option data-value="0109_4" value="0109_4">0109_4</option><option data-value="0490_1" value="0490_1">0490_1</option><option data-value="0354_2" value="0354_2">0354_2</option><option data-value="0354_1" value="0354_1">0354_1</option><option data-value="0180_4" value="0180_4">0180_4</option><option data-value="0180_2" value="0180_2">0180_2</option><option data-value="0180_1" value="0180_1">0180_1</option><option data-value="0180_3" value="0180_3">0180_3</option><option data-value="0367_1" value="0367_1">0367_1</option><option data-value="0123_4" value="0123_4">0123_4</option><option data-value="0123_2" value="0123_2">0123_2</option><option data-value="0123_3" value="0123_3">0123_3</option><option data-value="0123_1" value="0123_1">0123_1</option><option data-value="0433_1" value="0433_1">0433_1</option><option data-value="0051_1" value="0051_1">0051_1</option><option data-value="0465_1" value="0465_1">0465_1</option><option data-value="0112_1" value="0112_1">0112_1</option><option data-value="0521_1" value="0521_1">0521_1</option><option data-value="0011_1" value="0011_1">0011_1</option><option data-value="0435_1" value="0435_1">0435_1</option><option data-value="0528_1" value="0528_1">0528_1</option><option data-value="0190_1" value="0190_1">0190_1</option><option data-value="0459_1" value="0459_1">0459_1</option><option data-value="0076_1" value="0076_1">0076_1</option><option data-value="0022_1" value="0022_1">0022_1</option><option data-value="0290_2" value="0290_2">0290_2</option><option data-value="0290_1" value="0290_1">0290_1</option><option data-value="0364_1" value="0364_1">0364_1</option><option data-value="0458_1" value="0458_1">0458_1</option><option data-value="0341_1" value="0341_1">0341_1</option><option data-value="0439_1" value="0439_1">0439_1</option><option data-value="0018_1" value="0018_1">0018_1</option><option data-value="0136_2" value="0136_2">0136_2</option><option data-value="0136_1" value="0136_1">0136_1</option><option data-value="0502_1" value="0502_1">0502_1</option><option data-value="0475_1" value="0475_1">0475_1</option><option data-value="0075_1" value="0075_1">0075_1</option><option data-value="0432_2" value="0432_2">0432_2</option><option data-value="0432_1" value="0432_1">0432_1</option><option data-value="0137_2" value="0137_2">0137_2</option><option data-value="0137_1" value="0137_1">0137_1</option><option data-value="0479_1" value="0479_1">0479_1</option><option data-value="0410_1" value="0410_1">0410_1</option><option data-value="0497_1" value="0497_1">0497_1</option><option data-value="0086_1" value="0086_1">0086_1</option><option data-value="0121_1" value="0121_1">0121_1</option><option data-value="0121_2" value="0121_2">0121_2</option><option data-value="0021_1" value="0021_1">0021_1</option><option data-value="0373_1" value="0373_1">0373_1</option><option data-value="0255_1" value="0255_1">0255_1</option><option data-value="0351_2" value="0351_2">0351_2</option><option data-value="0351_1" value="0351_1">0351_1</option><option data-value="0456_1" value="0456_1">0456_1</option><option data-value="0293_1" value="0293_1">0293_1</option><option data-value="0532_1" value="0532_1">0532_1</option><option data-value="0145_1" value="0145_1">0145_1</option><option data-value="0385_1" value="0385_1">0385_1</option><option data-value="0262_1" value="0262_1">0262_1</option><option data-value="0252_2" value="0252_2">0252_2</option><option data-value="0252_1" value="0252_1">0252_1</option><option data-value="0252_3" value="0252_3">0252_3</option><option data-value="0327_1" value="0327_1">0327_1</option><option data-value="0192_1" value="0192_1">0192_1</option><option data-value="0370_1" value="0370_1">0370_1</option><option data-value="0426_2" value="0426_2">0426_2</option><option data-value="0426_1" value="0426_1">0426_1</option><option data-value="0122_1" value="0122_1">0122_1</option><option data-value="0122_3" value="0122_3">0122_3</option><option data-value="0122_2" value="0122_2">0122_2</option><option data-value="0215_1" value="0215_1">0215_1</option><option data-value="0500_1" value="0500_1">0500_1</option><option data-value="0347_2" value="0347_2">0347_2</option><option data-value="0347_6" value="0347_6">0347_6</option><option data-value="0347_5" value="0347_5">0347_5</option><option data-value="0347_3" value="0347_3">0347_3</option><option data-value="0347_1" value="0347_1">0347_1</option><option data-value="0347_4" value="0347_4">0347_4</option><option data-value="0207_1" value="0207_1">0207_1</option><option data-value="0258_1" value="0258_1">0258_1</option><option data-value="0440_1" value="0440_1">0440_1</option><option data-value="0309_1" value="0309_1">0309_1</option><option data-value="0183_1" value="0183_1">0183_1</option><option data-value="0041_1" value="0041_1">0041_1</option><option data-value="0296_1" value="0296_1">0296_1</option><option data-value="0101_2" value="0101_2">0101_2</option><option data-value="0101_1" value="0101_1">0101_1</option><option data-value="0125_1" value="0125_1">0125_1</option><option data-value="0125_3" value="0125_3">0125_3</option><option data-value="0125_2" value="0125_2">0125_2</option><option data-value="0357_1" value="0357_1">0357_1</option><option data-value="0357_2" value="0357_2">0357_2</option><option data-value="0115_1" value="0115_1">0115_1</option><option data-value="0431_1" value="0431_1">0431_1</option><option data-value="0337_1" value="0337_1">0337_1</option><option data-value="0232_1" value="0232_1">0232_1</option><option data-value="0203_1" value="0203_1">0203_1</option><option data-value="0130_1" value="0130_1">0130_1</option><option data-value="0130_2" value="0130_2">0130_2</option><option data-value="0130_3" value="0130_3">0130_3</option><option data-value="0130_4" value="0130_4">0130_4</option><option data-value="0130_5" value="0130_5">0130_5</option><option data-value="0130_6" value="0130_6">0130_6</option><option data-value="0130_7" value="0130_7">0130_7</option><option data-value="0250_1" value="0250_1">0250_1</option><option data-value="0250_2" value="0250_2">0250_2</option><option data-value="0250_3" value="0250_3">0250_3</option><option data-value="0003_1" value="0003_1">0003_1</option><option data-value="0003_2" value="0003_2">0003_2</option><option data-value="0003_3" value="0003_3">0003_3</option><option data-value="0003_4" value="0003_4">0003_4</option><option data-value="0059_1" value="0059_1">0059_1</option><option data-value="0059_2" value="0059_2">0059_2</option><option data-value="0059_3" value="0059_3">0059_3</option><option data-value="0079_1" value="0079_1">0079_1</option><option data-value="0079_2" value="0079_2">0079_2</option><option data-value="0078_1" value="0078_1">0078_1</option><option data-value="0078_2" value="0078_2">0078_2</option><option data-value="0078_3" value="0078_3">0078_3</option><option data-value="0176_1" value="0176_1">0176_1</option><option data-value="0492_1" value="0492_1">0492_1</option><option data-value="0495_1" value="0495_1">0495_1</option><option data-value="0177_1" value="0177_1">0177_1</option><option data-value="0186_1" value="0186_1">0186_1</option><option data-value="0388_1" value="0388_1">0388_1</option><option data-value="0525_1" value="0525_1">0525_1</option><option data-value="0057_1" value="0057_1">0057_1</option><option data-value="0204_1" value="0204_1">0204_1</option><option data-value="0313_1" value="0313_1">0313_1</option><option data-value="0313_2" value="0313_2">0313_2</option><option data-value="0517_1" value="0517_1">0517_1</option><option data-value="0507_1" value="0507_1">0507_1</option><option data-value="0004_1" value="0004_1">0004_1</option><option data-value="0287_1" value="0287_1">0287_1</option><option data-value="0202_1" value="0202_1">0202_1</option><option data-value="0288_1" value="0288_1">0288_1</option><option data-value="0286_1" value="0286_1">0286_1</option><option data-value="0019_1" value="0019_1">0019_1</option><option data-value="Nenhum" value="Nenhum">Nenhum</option></select></div><button class="p-Widget jupyter-widgets jupyter-button widget-button mod-info" title="" style="height: 30px; margin: 0px; width: 120px;">Inserir CC</button></div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox"><div class="p-Widget jupyter-widgets widget-label" style="height: 50px; margin: 0px; width: 250px;">Remover Conta da Seleção:</div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-text" style="height: 30px; margin: 0px 40px 0px 0px; width: 200px;"><label class="widget-label" title="" for="556a00ca-3068-4e12-96c0-b98003c32ae0" style="display: none;"></label><input type="text" id="556a00ca-3068-4e12-96c0-b98003c32ae0" placeholder="&#8203;"></div><button class="p-Widget jupyter-widgets jupyter-button widget-button mod-danger" title="" style="height: 30px; margin: 0px; width: 400px;">Remover Conta Contrato</button></div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox"><div class="p-Widget jupyter-widgets widget-label" style="height: 50px; margin: 0px; width: 250px;">Atualizar Mapa da Seleção</div><button class="p-Widget jupyter-widgets jupyter-button widget-button mod-warning" title="" style="height: 30px; margin: 0px; width: 400px;">Atualizar Mapa</button></div><button class="p-Widget jupyter-widgets jupyter-button widget-button mod-success" title="" style="height: 35px; width: 99.4%;">Realizar Seleção Massiva</button><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox"><div class="p-Widget jupyter-widgets widget-inline-hbox widget-html" style="width: 33%;"><label class="widget-label" title="" style="display: none;"></label><div class="widget-html-content"> <a href="resultados/EPS_CONVENCIONAL_2401.xlsx" target="_blank">Resultado da Seleção</a><br>
+                                                            </div></div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-html" style="width: 33%;"><label class="widget-label" title="" style="display: none;"></label><div class="widget-html-content"></div></div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-html" style="width: 33%;"><label class="widget-label" title="" style="display: none;"></label><div class="widget-html-content"> <a href="resultados/erros_selecao_EPS_CONVENCIONAL_2401.xlsx" target="_blank">Erros da Seleção</a><br></div></div></div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-html" style="margin: 20px 0px 0px 20px; width: 95%;"><label class="widget-label" title="" style="display: none;"></label><div class="widget-html-content">
+                              <table>
+                               <tbody><tr>
+                                    <th>CONTAS SELECIONADAS</th>
+                                    <th>MTVCOB (R$)</th>
+                                    <th>PECLD (R$)</th>
+                                    <th>ZONAS</th>
+                                    <th>ERROS SELEÇÃO</th>
+                                </tr><tr>
+                                    <th>3654 Contas
+                                    </th><th>2.171.409,54 
+                                    </th><th>516.439,63
+                                    </th><th>268
+                                    </th><th>9
+                                </th></tr>
+                              </tbody></table></div></div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-html"><label class="widget-label" title="" style="display: none;"></label><div class="widget-html-content"><div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -&gt; Trust Notebook</span><iframe src="about:blank" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" data-html="%3C%21DOCTYPE%20html%3E%0A%3Chead%3E%20%20%20%20%0A%20%20%20%20%3Cmeta%20http-equiv%3D%22content-type%22%20content%3D%22text/html%3B%20charset%3DUTF-8%22%20/%3E%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%3Cscript%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20L_NO_TOUCH%20%3D%20false%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20L_DISABLE_3D%20%3D%20false%3B%0A%20%20%20%20%20%20%20%20%3C/script%3E%0A%20%20%20%20%0A%20%20%20%20%3Cstyle%3Ehtml%2C%20body%20%7Bwidth%3A%20100%25%3Bheight%3A%20100%25%3Bmargin%3A%200%3Bpadding%3A%200%3B%7D%3C/style%3E%0A%20%20%20%20%3Cstyle%3E%23map%20%7Bposition%3Aabsolute%3Btop%3A0%3Bbottom%3A0%3Bright%3A0%3Bleft%3A0%3B%7D%3C/style%3E%0A%20%20%20%20%3Cscript%20src%3D%22https%3A//cdn.jsdelivr.net/npm/leaflet%401.6.0/dist/leaflet.js%22%3E%3C/script%3E%0A%20%20%20%20%3Cscript%20src%3D%22https%3A//code.jquery.com/jquery-1.12.4.min.js%22%3E%3C/script%3E%0A%20%20%20%20%3Cscript%20src%3D%22https%3A//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js%22%3E%3C/script%3E%0A%20%20%20%20%3Cscript%20src%3D%22https%3A//cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js%22%3E%3C/script%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//cdn.jsdelivr.net/npm/leaflet%401.6.0/dist/leaflet.css%22/%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css%22/%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css%22/%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css%22/%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css%22/%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css%22/%3E%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice-width%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20initial-scale%3D1.0%2C%20maximum-scale%3D1.0%2C%20user-scalable%3Dno%22%20/%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23map_98c637c418f94e9b9ec2192b51d242a8%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20position%3A%20relative%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20width%3A%20100.0%25%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20height%3A%20100.0%25%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20left%3A%200.0%25%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20top%3A%200.0%25%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/style%3E%0A%20%20%20%20%20%20%20%20%0A%3C/head%3E%0A%3Cbody%3E%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22folium-map%22%20id%3D%22map_98c637c418f94e9b9ec2192b51d242a8%22%20%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%0A%3C/body%3E%0A%3Cscript%3E%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20map_98c637c418f94e9b9ec2192b51d242a8%20%3D%20L.map%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22map_98c637c418f94e9b9ec2192b51d242a8%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20center%3A%20%5B-12.9869145%2C%20-43.8940578%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crs%3A%20L.CRS.EPSG3857%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20zoom%3A%207%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20zoomControl%3A%20true%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20preferCanvas%3A%20true%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29%3B%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20tile_layer_0b558fcdb8ce44d29a3c27211aa52997%20%3D%20L.tileLayer%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22https%3A//%7Bs%7D.tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%22attribution%22%3A%20%22Data%20by%20%5Cu0026copy%3B%20%5Cu003ca%20href%3D%5C%22http%3A//openstreetmap.org%5C%22%5Cu003eOpenStreetMap%5Cu003c/a%5Cu003e%2C%20under%20%5Cu003ca%20href%3D%5C%22http%3A//www.openstreetmap.org/copyright%5C%22%5Cu003eODbL%5Cu003c/a%5Cu003e.%22%2C%20%22detectRetina%22%3A%20false%2C%20%22maxNativeZoom%22%3A%2018%2C%20%22maxZoom%22%3A%2018%2C%20%22minZoom%22%3A%200%2C%20%22noWrap%22%3A%20false%2C%20%22opacity%22%3A%201%2C%20%22subdomains%22%3A%20%22abc%22%2C%20%22tms%22%3A%20false%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29.addTo%28map_98c637c418f94e9b9ec2192b51d242a8%29%3B%0A%20%20%20%20%20%20%20%20%0A%3C/script%3E" onload="this.contentDocument.open();this.contentDocument.write(    decodeURIComponent(this.getAttribute('data-html')));this.contentDocument.close();" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe></div></div></div></div></div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-vbox p-mod-hidden"><div class="p-Widget jupyter-widgets widget-inline-hbox widget-html"><label class="widget-label" title="" style="display: none;"></label><div class="widget-html-content"><label class="status-label success-label">Foram inseridas 3654 linhas </label></div></div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-html"><label class="widget-label" title="" style="display: none;"></label><div class="widget-html-content"><a href="Configuracoes/CONFIGURACAO_EPS_CONVENCIONAL.xlsx" target="_blank">Arquivo de Configuração xlsx</a><br>
+        </div></div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-html"><label class="widget-label" title="" style="display: none;"></label><div class="widget-html-content"><a href="Configuracoes/CONFIGURACAO_EPS_CONVENCIONAL.csv" target="_blank">Arquivo de Configuração csv</a><br>
+        </div></div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox"><div class="p-Widget jupyter-widgets widget-label" style="height: 45px; margin: 0px 20px 0px 0px;">Carteira (Configuração e Inserção na Tabela):</div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-dropdown" style="height: 30px; margin: 0px 20px 0px 0px; width: 150px;"><label class="widget-label" title="" for="704b0dd1-e6f8-4859-b28b-f08b8355a704" style="display: none;"></label><select id="704b0dd1-e6f8-4859-b28b-f08b8355a704"><option data-value="CONVENCIONAL" value="CONVENCIONAL">CONVENCIONAL</option><option data-value="DISJUNTOR" value="DISJUNTOR">DISJUNTOR</option><option data-value="RECORTE" value="RECORTE">RECORTE</option><option data-value="RECORTE_BAIXA" value="RECORTE_BAIXA">RECORTE_BAIXA</option><option data-value="MISTA" value="MISTA">MISTA</option></select></div><div class="p-Widget jupyter-widgets widget-label" style="height: 45px; margin: 0px 20px 0px 0px;">Flag Defasagem:</div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-dropdown" style="height: 30px; margin: 0px 40px 0px 0px; width: 116px;"><label class="widget-label" title="" for="bfae19f5-992f-452a-ac4a-d8a42ed48fef" style="display: none;"></label><select id="bfae19f5-992f-452a-ac4a-d8a42ed48fef"><option data-value="N" value="N">N</option><option data-value="S" value="S">S</option></select></div></div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox"><div class="p-Widget jupyter-widgets widget-label" style="height: 45px; margin: 0px 20px 0px 0px;">Arquivo Para Inserção na Tabela:</div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-dropdown" style="height: 30px; margin: 0px 20px 0px 0px; width: 310px;"><label class="widget-label" title="" for="2297a3cb-4dc4-4e32-b8f5-ddafc3d039e1" style="display: none;"></label><select id="2297a3cb-4dc4-4e32-b8f5-ddafc3d039e1"><option data-value="EPS_BAIXA%20MIX_1901.xlsx" value="EPS_BAIXA MIX_1901.xlsx">EPS_BAIXA&nbsp;MIX_1901.xlsx</option><option data-value="EPS_BAIXA%20MIX_2001.xlsx" value="EPS_BAIXA MIX_2001.xlsx">EPS_BAIXA&nbsp;MIX_2001.xlsx</option><option data-value="EPS_CONVENCIONAL_1901.xlsx" value="EPS_CONVENCIONAL_1901.xlsx">EPS_CONVENCIONAL_1901.xlsx</option><option data-value="EPS_CONVENCIONAL_2001.xlsx" value="EPS_CONVENCIONAL_2001.xlsx">EPS_CONVENCIONAL_2001.xlsx</option><option data-value="EPS_CONVENCIONAL_2301.xlsx" value="EPS_CONVENCIONAL_2301.xlsx">EPS_CONVENCIONAL_2301.xlsx</option><option data-value="EPS_CONVENCIONAL_2401.xlsx" value="EPS_CONVENCIONAL_2401.xlsx">EPS_CONVENCIONAL_2401.xlsx</option><option data-value="EPS_DISJUNTOR_2001.xlsx" value="EPS_DISJUNTOR_2001.xlsx">EPS_DISJUNTOR_2001.xlsx</option><option data-value="EPS_DISJUNTOR_2301.xlsx" value="EPS_DISJUNTOR_2301.xlsx">EPS_DISJUNTOR_2301.xlsx</option><option data-value="EPS_DISJUNTOR_2401.xlsx" value="EPS_DISJUNTOR_2401.xlsx">EPS_DISJUNTOR_2401.xlsx</option><option data-value="EPS_RECORTE_2001.xlsx" value="EPS_RECORTE_2001.xlsx">EPS_RECORTE_2001.xlsx</option><option data-value="EPS_RECORTE_BAIXA_1901.xlsx" value="EPS_RECORTE_BAIXA_1901.xlsx">EPS_RECORTE_BAIXA_1901.xlsx</option><option data-value="selecao_AMARGOSA_2401.xlsx" value="selecao_AMARGOSA_2401.xlsx">selecao_AMARGOSA_2401.xlsx</option><option data-value="selecao_BRUMADO_2301.xlsx" value="selecao_BRUMADO_2301.xlsx">selecao_BRUMADO_2301.xlsx</option><option data-value="selecao_CAMACARI_2401.xlsx" value="selecao_CAMACARI_2401.xlsx">selecao_CAMACARI_2401.xlsx</option><option data-value="selecao_CANDEIAS_2001.xlsx" value="selecao_CANDEIAS_2001.xlsx">selecao_CANDEIAS_2001.xlsx</option><option data-value="selecao_FEIRA%20DE%20SANTANA%20NORTE_2301.xlsx" value="selecao_FEIRA DE SANTANA NORTE_2301.xlsx">selecao_FEIRA&nbsp;DE&nbsp;SANTANA&nbsp;NORTE_2301.xlsx</option><option data-value="selecao_FEIRA%20DE%20SANTANA%20SUL_2301.xlsx" value="selecao_FEIRA DE SANTANA SUL_2301.xlsx">selecao_FEIRA&nbsp;DE&nbsp;SANTANA&nbsp;SUL_2301.xlsx</option><option data-value="selecao_FEIRA%20DE%20SANTANA%20SUL_2401.xlsx" value="selecao_FEIRA DE SANTANA SUL_2401.xlsx">selecao_FEIRA&nbsp;DE&nbsp;SANTANA&nbsp;SUL_2401.xlsx</option><option data-value="selecao_GRACA_1901.xlsx" value="selecao_GRACA_1901.xlsx">selecao_GRACA_1901.xlsx</option><option data-value="selecao_GRACA_2401.xlsx" value="selecao_GRACA_2401.xlsx">selecao_GRACA_2401.xlsx</option><option data-value="selecao_ILHEUS_2401.xlsx" value="selecao_ILHEUS_2401.xlsx">selecao_ILHEUS_2401.xlsx</option><option data-value="selecao_ITABUNA_2001.xlsx" value="selecao_ITABUNA_2001.xlsx">selecao_ITABUNA_2001.xlsx</option><option data-value="selecao_ITAPOAN_2401.xlsx" value="selecao_ITAPOAN_2401.xlsx">selecao_ITAPOAN_2401.xlsx</option><option data-value="selecao_JUAZEIRO_1901.xlsx" value="selecao_JUAZEIRO_1901.xlsx">selecao_JUAZEIRO_1901.xlsx</option><option data-value="selecao_JUAZEIRO_2001.xlsx" value="selecao_JUAZEIRO_2001.xlsx">selecao_JUAZEIRO_2001.xlsx</option><option data-value="selecao_JUAZEIRO_2301.xlsx" value="selecao_JUAZEIRO_2301.xlsx">selecao_JUAZEIRO_2301.xlsx</option><option data-value="selecao_LAURO%20DE%20FREITAS_2301.xlsx" value="selecao_LAURO DE FREITAS_2301.xlsx">selecao_LAURO&nbsp;DE&nbsp;FREITAS_2301.xlsx</option><option data-value="selecao_LAURO%20DE%20FREITAS_2401.xlsx" value="selecao_LAURO DE FREITAS_2401.xlsx">selecao_LAURO&nbsp;DE&nbsp;FREITAS_2401.xlsx</option><option data-value="selecao_PERIPERI_2401.xlsx" value="selecao_PERIPERI_2401.xlsx">selecao_PERIPERI_2401.xlsx</option><option data-value="selecao_PIRAJA_2401.xlsx" value="selecao_PIRAJA_2401.xlsx">selecao_PIRAJA_2401.xlsx</option><option data-value="selecao_PITUBA_2401.xlsx" value="selecao_PITUBA_2401.xlsx">selecao_PITUBA_2401.xlsx</option><option data-value="selecao_PORTO%20SEGURO_2401.xlsx" value="selecao_PORTO SEGURO_2401.xlsx">selecao_PORTO&nbsp;SEGURO_2401.xlsx</option><option data-value="selecao_REMANSO_1901.xlsx" value="selecao_REMANSO_1901.xlsx">selecao_REMANSO_1901.xlsx</option><option data-value="selecao_REMANSO_2001.xlsx" value="selecao_REMANSO_2001.xlsx">selecao_REMANSO_2001.xlsx</option><option data-value="selecao_REMANSO_2301.xlsx" value="selecao_REMANSO_2301.xlsx">selecao_REMANSO_2301.xlsx</option><option data-value="selecao_RIBEIRA%20DO%20POMBAL_1901.xlsx" value="selecao_RIBEIRA DO POMBAL_1901.xlsx">selecao_RIBEIRA&nbsp;DO&nbsp;POMBAL_1901.xlsx</option><option data-value="selecao_RIBEIRA%20DO%20POMBAL_2001.xlsx" value="selecao_RIBEIRA DO POMBAL_2001.xlsx">selecao_RIBEIRA&nbsp;DO&nbsp;POMBAL_2001.xlsx</option><option data-value="selecao_SANTA%20MARIA%20DA%20VITORIA_2401.xlsx" value="selecao_SANTA MARIA DA VITORIA_2401.xlsx">selecao_SANTA&nbsp;MARIA&nbsp;DA&nbsp;VITORIA_2401.xlsx</option><option data-value="selecao_SANTO%20AMARO_2301.xlsx" value="selecao_SANTO AMARO_2301.xlsx">selecao_SANTO&nbsp;AMARO_2301.xlsx</option><option data-value="selecao_SANTO%20AMARO_2401.xlsx" value="selecao_SANTO AMARO_2401.xlsx">selecao_SANTO&nbsp;AMARO_2401.xlsx</option><option data-value="selecao_SENHOR%20DO%20BONFIM_2001.xlsx" value="selecao_SENHOR DO BONFIM_2001.xlsx">selecao_SENHOR&nbsp;DO&nbsp;BONFIM_2001.xlsx</option><option data-value="selecao_TEIXEIRA%20DE%20FREITAS_2401.xlsx" value="selecao_TEIXEIRA DE FREITAS_2401.xlsx">selecao_TEIXEIRA&nbsp;DE&nbsp;FREITAS_2401.xlsx</option><option data-value="selecao_VALENCA_1901.xlsx" value="selecao_VALENCA_1901.xlsx">selecao_VALENCA_1901.xlsx</option><option data-value="selecao_VALENCA_2401.xlsx" value="selecao_VALENCA_2401.xlsx">selecao_VALENCA_2401.xlsx</option><option data-value="STC_CONVENCIONAL_2001.xlsx" value="STC_CONVENCIONAL_2001.xlsx">STC_CONVENCIONAL_2001.xlsx</option><option data-value="STC_CONVENCIONAL_2301.xlsx" value="STC_CONVENCIONAL_2301.xlsx">STC_CONVENCIONAL_2301.xlsx</option><option data-value="STC_CONVENCIONAL_2401.xlsx" value="STC_CONVENCIONAL_2401.xlsx">STC_CONVENCIONAL_2401.xlsx</option><option data-value="STC_MISTA_2001.xlsx" value="STC_MISTA_2001.xlsx">STC_MISTA_2001.xlsx</option><option data-value="STC_MISTA_2301.xlsx" value="STC_MISTA_2301.xlsx">STC_MISTA_2301.xlsx</option><option data-value="STC_MISTA_2401.xlsx" value="STC_MISTA_2401.xlsx">STC_MISTA_2401.xlsx</option><option data-value="STC_RECORTE_2001.xlsx" value="STC_RECORTE_2001.xlsx">STC_RECORTE_2001.xlsx</option></select></div><button class="p-Widget jupyter-widgets jupyter-button widget-button mod-success" title="" style="height: 30px; margin: 0px 20px 0px 0px; width: 150px;">Inserir na Tabela</button></div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox"><div class="p-Widget jupyter-widgets widget-label" style="height: 45px; margin: 0px 15px 0px 0px; width: 100px;">Peso MTVCOB:</div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-text" style="height: 30px; margin: 0px 15px 0px 0px; width: 50px;"><label class="widget-label" title="" for="34ca0ed1-b009-49c6-ba6e-ad40bb8435fd" style="display: none;"></label><input type="number" required="" id="34ca0ed1-b009-49c6-ba6e-ad40bb8435fd" step="any"></div><div class="p-Widget jupyter-widgets widget-label" style="height: 45px; margin: 0px 15px 0px 0px; width: 100px;">Peso PECLD:</div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-text" style="height: 30px; margin: 0px 15px 0px 0px; width: 50px;"><label class="widget-label" title="" for="6db3714c-8835-4ec9-97e7-215d5e688ad3" style="display: none;"></label><input type="number" required="" id="6db3714c-8835-4ec9-97e7-215d5e688ad3" step="any"></div><div class="p-Widget jupyter-widgets widget-label" style="height: 45px; margin: 0px 15px 0px 0px; width: 100px;">Peso QTDFTVE:</div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-text" style="height: 30px; margin: 0px 15px 0px 0px; width: 50px;"><label class="widget-label" title="" for="9760f63f-dba1-4dee-b8cf-b5021b38c9c4" style="display: none;"></label><input type="number" required="" id="9760f63f-dba1-4dee-b8cf-b5021b38c9c4" step="any"></div><button class="p-Widget jupyter-widgets jupyter-button widget-button mod-info" title="" style="height: 30px; margin: 0px 15px 0px 0px; width: 150px;">Importar Config</button></div><div class="p-Widget p-Panel jupyter-widgets widget-container widget-box widget-hbox"><div class="p-Widget jupyter-widgets widget-label" style="height: 45px; margin: 20px 10px 0px 0px; width: 150px;">Ram em Utilização:</div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-text" style="height: 45px; margin: 20px 20px 0px 0px; width: 70px;"><label class="widget-label" title="" for="d5a8631e-9eef-469d-9d85-62087a4a7981" style="display: none;"></label><input type="text" id="d5a8631e-9eef-469d-9d85-62087a4a7981" disabled="" placeholder="&#8203;"></div><div class="p-Widget jupyter-widgets widget-label" style="height: 45px; margin: 20px 10px 0px 0px; width: 150px;">CPU em Utilização:</div><div class="p-Widget jupyter-widgets widget-inline-hbox widget-text" style="height: 45px; margin: 20px 20px 0px 0px; width: 70px;"><label class="widget-label" title="" for="c3dd27b9-b8d1-4a48-937f-4ae08b2718b0" style="display: none;"></label><input type="text" id="c3dd27b9-b8d1-4a48-937f-4ae08b2718b0" disabled="" placeholder="&#8203;"></div></div></div></div></div></div>
+
 </body>
 </html>
