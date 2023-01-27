@@ -12,78 +12,55 @@
 </head>
 <body>
   <header>
-    <h3>Atena - COELBA</h3>
-    <h1>Atena - COELBA</h1>
+    <h3>LOGIN - HANA</h3>
   </header>
 
-  <div class="content">
-    <div class="sidebar">
+  <div class="login">
 
-      <form action="">
-
-        <div class="field">
-          <label for="turma">Turma:</label>
-          <input type="text" value="" placeholder="TURMA">
-        </div>
-        
-        <div class="field">
-          <label for="carteira">Carteira:</label>
-          <select name="turma" id="">Turma
-            <option value="stc">STC</option>
-            <option value="eps">EPS</option>
-          </select>
-        </div>
-        
-        <div class="field">
-          <label for="consulta">Consulta</label>
-          <select name="consulta" id="">Consulta:
-            <option value="convencional">CONVENCIONAL</option>
-            <option value="disjuntor">DISJUNTOR</option>
-            <option value="recorte">RECORTE</option>
-            <option value="baixa_mix">BAIXA MIX</option>
-          </select>
-        </div>
-        
-        <div class="field">
-          <label for="qtd-suscetiveis">Qtd. Suscetíveis:</label>
-          <input type="text" value="" placeholder="--">
-        </div>
-        
-        <div class="field">
-          <label for="sts-consulta">Status da Consulta:</label>
-          <input type="text" value="" placeholder="--">
-        </div>
-        
-        <div class="field">
-          <label for="qtd-suscetiveis">Qtd. Suscetíveis:</label>
-          <input type="date" value="" placeholder="">
-        </div>
-
-      </form>
-
-    </div>
-
-    <div class="wrapper">
-      <div class="p-Widget p-TabBar p-TabPanel-tabBar widget-tab-bar" data-orientation="horizontal">
-        <nav>
-          <!-- <ul class="menu"> -->
-            <div>Parâmetros</div>  
-            <div>Listagem de Raios</div>
-            <div>Selecionar</div>
-            <div>Resultados</div>
-            <div>Maiores Devedores</div>
-            <div>Seleção Massiva</div>
-            <div>HANA</div>  
-          <!-- </ul> -->
-        </nav>
+    
+    <form class="login-form" action="/login/login" method="post">
+      <div class="field-login">
+        <div class="rotulo">Matrícula CLB</div>
+        <input 
+          id="email"
+          type="email" 
+          name="email" 
+          placeholder="Matrícula CLB" 
+          value=""
+          onblur="Validate.apply(this, 'isEmail')"
+          
+        >
+        {# {% if error %}
+            onsubmit="Validate.apply(this, 'erro')"
+          {% endif %} #}
       </div>
-      <img src="{{ url_for('static', filename='img/iberd.jpg') }}" alt="">
-    </div>
-
+    
+      <div class="field-login">
+        <div class="rotulo">Senha</div>
+        <input 
+          type="password" 
+          name="password" 
+          placeholder="Digite sua senha" 
+          onblur="ValidateField.apply(this, 'erro')"
+        >
+      </div>
+    
+      <div class="access">
+        <button class="button" type="submit">Acessar</button>
+      </div>
+    </form>
+    
   </div>
 
+  
   <footer class="footer">
     <h4>Seleção Estratégica de Cortes</h4>
   </footer>
+
+  <script>
+    window.onload = function() {
+      document.getElementById('email').focus();
+    }
+  </script>
 </body>
 </html>

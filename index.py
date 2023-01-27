@@ -9,6 +9,10 @@ app = Flask(__name__)
 def homepage():
   return render_template("index.html")
 
+@app.route("/atena/homeatena")
+def homeatena():
+  return render_template("atena/homeatena.html")
+
 @app.route("/usuarios/<nome_usuario>")
 def usuarios(nome_usuario):
   return render_template("usuarios.html", nome_usuario=nome_usuario)
